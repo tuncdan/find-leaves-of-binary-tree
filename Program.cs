@@ -2,7 +2,7 @@
 
 namespace FindLeavesOfBinaryTree
 {
-    class Program
+    class EntryPoint
     {
         static void Main()
         {
