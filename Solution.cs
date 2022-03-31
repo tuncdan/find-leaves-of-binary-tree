@@ -20,15 +20,15 @@ namespace FindLeavesOfBinaryTree
             if (root == null)
                 return 0;
 
-            int leftHeight = CalculateNodeLevelHeight(root.left) + 1;
-            int rightHeight = CalculateNodeLevelHeight(root.right) + 1;
+            int leftHeight = CalculateNodeLevelHeight(root.Left) + 1;
+            int rightHeight = CalculateNodeLevelHeight(root.Right) + 1;
 
             int level = Math.Max(leftHeight, rightHeight);
 
             if (result.Count < level)
                 result.Add(new List<int>());
 
-            result[level - 1].Add(root.val);
+            result[level - 1].Add(root.Val);
 
             return level;
         } //Time Complexity: O(n), Space complexity: O(n)
