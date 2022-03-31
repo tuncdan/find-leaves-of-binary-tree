@@ -16,8 +16,8 @@ namespace FindLeavesOfBinaryTree
                 if (nodes[i] == null)
                     nodes[i] = new TreeNode(i + 1);
 
-                nodes[i].left = nodes[i + jumpCounterToChildNodes] = new TreeNode(i + 1 + jumpCounterToChildNodes++);
-                nodes[i].right = nodes[i + jumpCounterToChildNodes] = new TreeNode(i + 1 + jumpCounterToChildNodes);
+                nodes[i].Left = nodes[i + jumpCounterToChildNodes] = new TreeNode(i + 1 + jumpCounterToChildNodes++);
+                nodes[i].Right = nodes[i + jumpCounterToChildNodes] = new TreeNode(i + 1 + jumpCounterToChildNodes);
             }
 
             return nodes[0];
